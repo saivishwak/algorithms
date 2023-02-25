@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 struct Node {
     value: i32,
     next: Option<Box<Node>>,
