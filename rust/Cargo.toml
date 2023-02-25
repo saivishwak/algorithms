@@ -3,8 +3,10 @@ name = "rust_test"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[members]
+[lib]
+name = "foo"           # The name of the target.
+path = "src/lib.rs"    # The source file of the target.
+test = true            # Is tested by default.
+crate-type = ["lib"]   # The crate types to generate.
 
 [dependencies]
