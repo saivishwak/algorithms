@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [lib]
-name = "foo"           # The name of the target.
+name = "rust_ds"           # The name of the target.
 path = "src/lib.rs"    # The source file of the target.
 test = true            # Is tested by default.
 crate-type = ["lib"]   # The crate types to generate.

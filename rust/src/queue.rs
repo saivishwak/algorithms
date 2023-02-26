@@ -69,8 +69,20 @@ mod queue_test {
     }
 
     #[test]
-    fn pop() {}
+    fn pop() {
+        let mut queue = Queue::<i32>::new();
+        queue.enqueue(0);
+        queue.enqueue(1);
+        assert_eq!(queue.get_size(), 2);
+        assert_eq!(queue.dequeue().unwrap(), 0);
+        assert_eq!(queue.dequeue().unwrap(), 1);
+        assert_eq!(queue.get_size(), 0);
+    }
 
     #[test]
-    fn top() {}
+    fn peek() {
+        let mut queue = Queue::<i32>::new();
+        queue.enqueue(0);
+        assert_eq!(queue.peek().unwrap(), 0);
+    }
 }
