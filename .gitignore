@@ -1,2 +1,5 @@
 *.o
 **/target/*
+CMakeFiles
+dist
+build
