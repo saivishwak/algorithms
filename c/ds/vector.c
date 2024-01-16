@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "vector.h"
+#include <stdbool.h>
 
 void init_vector(vector* vec, int cap){
   //If cap == 0 then use default value of capacity else use user defined
@@ -45,6 +46,10 @@ void* vector_pop(vector *v){
     v->total = len-1;
     return item;
   }
+}
+
+bool vector_is_empty(vector * vec){
+  return vec->total == 0;
 }
 
 void delete_vector(vector *v){
