@@ -8,10 +8,6 @@ Algorithms and data structures are fundamental to efficient code and good softwa
 
 This repository is contribution friendly :smiley:. If you'd like to add or improve an algorithm, your contribution is welcome!
 
-# Running an algorithm implementation
-
-To compile and run any of the algorithms here, you need at least JDK version 8. Gradle can make things more convenient for you, but it is not required.
-
 # Running
 
 This project supports multiple languages hence each language folder has README which has the instructions for running.
