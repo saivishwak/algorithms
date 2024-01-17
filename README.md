@@ -1,6 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# Data Structures & AlgorithmsAlgorithms
+# Data Structures & Algorithms
 
 Algorithms and data structures are fundamental to efficient code and good software design. Creating and designing excellent algorithms is required for being an exemplary programmer. This repository's goal is to demonstrate how to implement common data structures and algorithms in C and other languages. Main focus will be in C to understand every detail.
 
