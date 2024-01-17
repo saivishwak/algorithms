@@ -19,6 +19,6 @@ BinTreeNode* init_binary_tree(void *);
 
 void binary_tree_insert(BinTreeNode **, void *, int);
 
-void free_binary_tree(BinTreeNode *);
+void free_binary_tree(BinTreeNode *, int);
 
 #endif

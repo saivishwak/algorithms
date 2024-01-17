@@ -20,6 +20,6 @@ int main(){
   }
   inorder_print(root);
   printf("\n");
-  free_binary_tree(root);
+  free_binary_tree(root, size);
   return 0;
 }

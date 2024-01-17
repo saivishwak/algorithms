@@ -46,7 +46,31 @@ void binary_tree_insert(BinTreeNode **node, void *item, int size){
     }
     index++;
   }
+  delete_vector(&vec);
 };
 
-void free_binary_tree(BinTreeNode *root){
+void free_binary_tree(BinTreeNode *root, int size){
+  vector queue;
+  init_vector(&queue, 0);
+  vector_add(&queue, root);
+  int index = 0;
+  while (index < size){
+    BinTreeNode* top = queue.items[index];
+    if (top == NULL) {
+      continue;
+    }
+    if (top->left != NULL) {
+      vector_add(&queue,top->left);
+    }
+    if (top->right != NULL){
+      vector_add(&queue, top->right);
+    }
+    index++;
+  }
+  int queueSize = queue.total;
+  for (int i = 0; i < queueSize; i++){
+    BinTreeNode* node = (BinTreeNode *)queue.items[i];
+    free(node);
+  }
+  delete_vector(&queue);
 };
