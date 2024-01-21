@@ -82,7 +82,7 @@ void free_heap(HeapNode* root, int size){
   vector_add(&queue, root);
   int index = 0;
   while (index < size){
-   HeapNode* top = (HeapNode *)queue.items[index];
+    HeapNode* top = (HeapNode *)queue.items[index];
     if (top->left != NULL) vector_add(&queue, top->left);
     if (top->right != NULL) vector_add(&queue, top->right);
     free(top);
