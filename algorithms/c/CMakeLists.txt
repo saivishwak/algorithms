@@ -10,6 +10,7 @@ add_executable(bubble ./sorting/bubble.c)
 add_executable(selection ./sorting/selection.c)
 add_executable(insertion ./sorting/insertion.c)
 add_executable(merge ./sorting/merge.c)
+add_executable(quick ./sorting/quick.c)
 
 # Set the output directory for the executable
 set_target_properties(bubble PROPERTIES
@@ -22,5 +23,8 @@ set_target_properties(insertion PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/dist
 )
 set_target_properties(merge PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/dist
+)
+set_target_properties(quick PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/dist
 )
